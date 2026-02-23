@@ -1,0 +1,82 @@
+:root{--bg:#0f1724;--card:#0b1220;--accent:#1e90ff;--muted:#9aa4b2;--text:#e6eef6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071028 0%, #071827 100%);color:var(--text);line-height:1.5}
+.container{max-width:960px;margin:24px auto;padding:0 16px;padding-bottom:140px}
+.hero{display:flex;align-items:flex-start;gap:24px;padding:20px 16px}
+.hero .left{display:flex;flex-direction:column;align-items:center;gap:12px;width:160px}
+.hero .right{flex:1}
+.avatar-wrap{width:140px;height:140px;border-radius:50%;overflow:hidden;border:3px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#071827,#0b1624)}
+.avatar{width:100%;height:100%;border-radius:50%;display:block}
+.avatar-image{width:150%;height:150%;object-fit:cover;object-position:50% 30%;transform:translateY(-8%)}
+.intro h1{font-size:20px;margin-bottom:6px}
+.role{color:var(--muted)}
+
+.nav-buttons{display:flex;flex-direction:column;gap:10px;width:100%}
+.btn{display:inline-block;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,0.04);color:var(--text);border:1px solid rgba(255,255,255,0.04);text-decoration:none;font-weight:600;width:100%;text-align:center}
+.btn:hover{background:var(--accent);color:#071827;border-color:var(--accent)}
+.card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;margin-bottom:16px;box-shadow:0 4px 20px rgba(2,6,23,0.6)}
+.card h2{color:var(--accent);margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.contacts li{margin:6px 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.back{text-align:right;margin-top:12px}
+.btn-back{display:inline-block;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.04);color:var(--text);border:1px solid rgba(255,255,255,0.04);text-decoration:none;font-weight:600}
+.btn-back:hover{background:var(--accent);color:#071827;border-color:var(--accent)}
+.muted{color:var(--muted);font-size:13px;text-align:center}
+
+/* Page header (theme) and content separation for internal pages */
+.page-card{position:relative;padding-bottom:28px}
+.page-header{position:relative;padding:8px 0 0 12px}
+.page-header h1{font-size:26px;font-weight:800;margin:0 0 8px 0;color:var(--accent)}
+.page-content{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.page-content p{max-width:780px}
+.page-content ul{list-style:none;padding:0;margin:8px 0;max-width:720px;text-align:left}
+.page-content ul li{margin:6px 0}
+
+
+/* footer styles */
+.site-footer{display:flex;align-items:center;justify-content:space-between;padding:20px 50px;background:rgba(3,6,12,0.85);gap:16px;position:fixed;left:0;right:0;bottom:0;width:100%;z-index:50;border-radius:0;box-shadow:0 -6px 20px rgba(2,6,23,0.6)}
+
+.site-footer {
+  background-color: #0e0d0d;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icon svg {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s, fill 0.3s;
+}
+
+/* Cores oficiais */
+.footer-icon.linkedin svg { fill: #0077b5; }   /* Azul LinkedIn */
+.footer-icon.github svg { fill: #333; }        /* Preto GitHub */
+.footer-icon.credly svg { fill: #FF6B00; }     /* Laranja Credly */
+.footer-icon.udemy svg { fill: #A435F0; }      /* Roxo Udemy */
+
+/* Hover com efeito */
+.footer-icon:hover svg {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.footer-copy {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+
+
+@media(max-width:900px){.nav-buttons{flex-direction:row}}
+@media(max-width:600px){.hero{flex-direction:column;align-items:flex-start;gap:12px}.intro h1{font-size:18px}.nav-buttons{width:100%;justify-content:flex-start;flex-wrap:wrap}.avatar-wrap{width:96px;height:96px}}

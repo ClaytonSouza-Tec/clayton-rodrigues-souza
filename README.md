@@ -13,6 +13,7 @@ Com forte capacidade de diagnóstico e resolução de problemas, atuo como um pa
 
 
 🏆 Certificações
+
 ☁️ Cloud Platforms and On-Premises
 **Microsoft Azure**
 - MTA: Windows Server Administration Fundamentals - Certified 2017
